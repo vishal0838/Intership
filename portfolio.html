@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venom Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0 ,0 , 33);
+            color: white;
+            font-family: "Poppins", serif;
+            }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(19, 19, 65);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            font-size: 1.02rem;
+            box-shadow: 2px 2px 10px black;
+            color: rbg(153, 153, 226);
+            /* transition: all; */
+        }
+
+        .left {
+            font-size: 1.8rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 23px 0 ;
+        }
+
+        .firstsection > div {
+            width: 30%;
+        } 
+
+        .leftsection {
+            margin: 50px 0;
+            font-size: 3rem;
+            
+
+        }
+
+        #span1 {
+            color: rgb(137, 47, 220);
+        }
+
+        .rightsection img {
+            width: 319px;
+            position: absolute;
+            top: 180px;
+
+        }
+
+        #element {
+            color:  rgb(137, 47, 220);
+        }
+
+        .secondsection  {
+            max-width: 80vw;
+            margin: auto;
+           
+        }
+
+        /* .secondsection h1 {
+            text-align: left;
+        } */
+
+        main hr {
+            border: 2px solid rgb(137, 47, 220);
+            margin: 14px 112px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Vishal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contacts Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    
+    <main>
+        <section class="firstsection" > 
+            <div class="leftsection">
+                <div>
+                Hi, my name is <span id="span1"> Vishal.</span> and
+                <div> I am a passionate </div><b > Web-Developer</b></div>
+                <span id="element"></span>
+                
+            </div>
+           
+            <div class="rightsection">
+                <img src="bg.png.png" alt="">
+            </div>
+            
+
+        </section>
+
+        <hr>
+
+        <section class="secondsection">
+            <h1>Past Experience</h1>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web-Developer', 'Video Editor','Photo Editor'],
+      typeSpeed: 50,
+    });
+  </script>
+
+    
+</body>
+</html>
